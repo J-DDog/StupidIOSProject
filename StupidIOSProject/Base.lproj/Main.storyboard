@@ -17,46 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhS-8b-05X">
-                                <rect key="frame" x="231" y="285" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.75300798307716277" green="0.96495659509149478" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhS-8b-05X" userLabel="Change the Color">
+                                <rect key="frame" x="240" y="285" width="121" height="30"/>
+                                <state key="normal" title="Change the color">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uyj-Hc-Gw8"/>
+                                </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vZG-1L-d8X">
-                                <rect key="frame" x="161" y="222" width="118" height="31"/>
-                                <color key="backgroundColor" red="1" green="0.3587029991123738" blue="0.18538527740571664" alpha="1" colorSpace="calibratedRGB"/>
-                            </slider>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5CG-7z-iXn">
-                                <rect key="frame" x="244" y="398" width="158" height="2"/>
-                                <color key="backgroundColor" red="0.13664317522747016" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </progressView>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Npj-Wf-tkC">
-                                <rect key="frame" x="231" y="344" width="94" height="29"/>
-                                <color key="backgroundColor" red="0.0020072635769710079" green="1" blue="0.050183408901394944" alpha="1" colorSpace="calibratedRGB"/>
-                            </stepper>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="eLI-fu-L8k">
-                                <rect key="frame" x="231" y="408" width="39" height="37"/>
-                            </pageControl>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b1Z-FT-F2u">
-                                <rect key="frame" x="353" y="284" width="51" height="31"/>
-                                <color key="backgroundColor" red="1" green="0.8219337919977604" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </switch>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZZQ-Jg-SnT">
-                                <rect key="frame" x="329" y="222" width="97" height="30"/>
-                                <color key="backgroundColor" red="0.49502926012126192" green="0.53892950570132647" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.59672240180618508" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="colorButton" destination="FhS-8b-05X" id="Puk-jH-G6l"/>
+                        <outlet property="main" destination="8bC-Xf-vdC" id="CL2-uy-e2c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewControllerLayoutGuide type="bottom" id="UCN-Mk-GcN"/>
             </objects>
-            <point key="canvasLocation" x="381" y="416"/>
+            <point key="canvasLocation" x="274" y="397"/>
         </scene>
     </scenes>
 </document>
